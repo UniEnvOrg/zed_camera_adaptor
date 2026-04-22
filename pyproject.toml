@@ -1,0 +1,24 @@
+[project]
+name = "unienv_zed"
+version = "0.0.1a1"
+readme = "README.md"
+license = "MIT"
+requires-python = ">= 3.10"
+dependencies = [
+    "unienv",
+    "numpy",
+    "pyzed>=5.0"
+]
+
+[project.optional-dependencies]
+
+[project.urls]
+Homepage = "https://github.com/UniEnvOrg/zed_camera_adaptor"
+Documentation = "https://github.com/UniEnvOrg/zed_camera_adaptor"
+Repository = "https://github.com/UniEnvOrg/zed_camera_adaptor"
+Issues = "https://github.com/UniEnvOrg/zed_camera_adaptor/issues"
+Changelog = "https://github.com/UniEnvOrg/zed_camera_adaptor/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+include = ["*"]
+exclude = ["training*", "tests*", "examples*"]
